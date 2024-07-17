@@ -18,14 +18,14 @@
     font-style: normal;
   }
 
-  /* ----------------------------------- Share Style --------------------------------------- */
+  /* -------------- Share Style ------------- */
 .header-container{
     max-width: 1220px;
     margin: 3rem auto;
 }
 .mian-contianer{
   max-width: 1050px;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 .mian-contianer section{
   margin: 4rem 0;
@@ -37,7 +37,7 @@
   border: none;
   color: rgb(255, 255, 255);
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0px;
@@ -47,13 +47,13 @@
 .primary-btn i{
   margin-left: .5rem;
 }
-/* ------------------------------------ Universial Section ------------------------------------ */
+/* --------------- Universial Section ------------------- */
 *{
   padding: 0px;
   margin: 0;
   box-sizing: border-box;
 }
-/* ---------------------------------- header section ------------------------------------------ */
+/* ------------------- header section ------------------ */
 .header-container .logo{
   color: rgb(58, 58, 58);
   font-family: Poppins;
@@ -62,6 +62,10 @@
   line-height: 36px;
   letter-spacing: 0px;
   text-align: left;
+}
+.ham-bargar{
+  display: none;
+  margin-top: 5px;
 }
 .navbar{
   display: flex;
@@ -102,7 +106,7 @@
 .banner-text-section h1{
   color: rgb(58, 58, 58);
   font-family: Poppins;
-  font-size: 52px;
+  font-size: 3.2rem;
   font-weight: 700;
   line-height: 70px;
   letter-spacing: 0px;
@@ -111,7 +115,7 @@
 .banner-text-section p{
   color: rgb(58, 58, 58);
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 24px;
   letter-spacing: 0px;
@@ -135,13 +139,15 @@
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  justify-content: center;
   align-items: center;
+  gap: 2.5rem;
 }
 .straight-line{
   border-top: 1.5px solid #f0ecec;
 }
 
-/* ---------------------------------------------- popular-section -------------------------------------------------- */
+/* ------------------- popular-section ---------------------- */
 .popular-section-title{
   text-align: center;
   color: rgb(58, 58, 58);
@@ -156,6 +162,8 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+  justify-content: center;
+  align-items: center;
 }
 .card-item{
   border-radius: 5px;
@@ -224,7 +232,7 @@
   letter-spacing: 0px;
   text-align: right;
 }
-/* ------------------------------------ Featured products --------------------------------------*/
+/* ---------------------- Featured products -----------------------*/
 .featured-container{
   display: flex;
   justify-content: center;
@@ -261,8 +269,9 @@
 #primary-btn{
   border-radius: 3px;
 }
-/* ----------------------------- footer section style ------------------------------- */
+/* --------------- footer section style ------------------- */
 .footer{
+  width: 100%;
   background-color: rgb(12, 12, 39);
   padding: 3rem 0;
 }
@@ -303,6 +312,188 @@
   font-size: 1.4rem;
 }
 
-@media screen and (max-width: 1140) {
-  
+/* ------------------- small mobile Devices -------------- */
+@media screen and (max-width: 576px) {
+  .ham-bargar{
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(58, 58, 58);
+  }
+  .header-container .logo{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .menu-item{
+    display: none;
+  }
+  .banner{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
+  .banner-text-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-text-section h1{
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .mian-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  .banner-text-section p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .primary-btn{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-cions{
+    padding: 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .icons{
+    padding: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .card-items{
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .featured-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column-reverse;
+  }
+}
+
+/* ------------------- Mid mobile Devices -------------- */
+@media screen and (min-width: 576px) and (max-width: 768px){
+  .ham-bargar{
+    display: block;
+    font-size: 2rem;
+    color: rgb(58, 58, 58);
+  }
+  .header-container .logo{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .menu-item{
+    display: none;
+  }
+  .banner{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
+  .banner-text-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner-text-section h1{
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .mian-btn-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  .banner-text-section p{
+    font-size: 1rem;
+    text-align: center;
+  }
+  .primary-btn{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-cions{
+    padding: 0rem 0rem;
+  }
+  .icons{
+    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .card-items{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .featured-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+  }
+}
+/* ------------- Small Laptop or tablet screen ----------------- */
+@media screen and (min-width: 768px) and (max-width: 1060px) {
+  .menu-item li{
+    margin-left: 1.5rem;
+  }
+  .header-container .logo{
+    font-size: 1.7rem;
+  }
+  .banner{
+    gap: 1rem;
+  }
+  .banner-text-section{
+    width: 100%;
+  }
+  .banner{
+    display: flex;
+    gap: 2rem;
+    flex-direction: column-reverse;
+  }
+  .banner-text-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .featured-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    flex-direction: column;
+  }
+  .icons{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+/* --------- Responsive Design various device --------*/
+@media screen and (max-width: 1240px) {
+    .header-container{
+      padding: 0 2rem;
+  }
+    .mian-contianer{
+      padding: 0 2rem;
+  }
 }
