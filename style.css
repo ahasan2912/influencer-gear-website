@@ -98,6 +98,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
+  margin-bottom: 2rem;
 }
 .banner-text-section{
   width: 582px;
@@ -367,7 +368,13 @@
   .icons{
     padding: 1rem;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 3.5rem;
+  }
+  #icon-7{
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .card-items{
     grid-template-columns: 1fr;
@@ -433,7 +440,13 @@
   .icons{
     padding: 1rem;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
+  }
+  #icon-7{
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .card-items{
     grid-template-columns: repeat(2, 1fr);
@@ -445,6 +458,9 @@
     align-items: center;
     gap: 5rem;
     flex-direction: column;
+  }
+  .straight-line{
+    display: none;
   }
 }
 /* ------------- Small Laptop or tablet screen ----------------- */
@@ -486,6 +502,9 @@
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
+  }
+  .straight-line{
+    display: none;
   }
 }
 /* --------- Responsive Design various device --------*/
